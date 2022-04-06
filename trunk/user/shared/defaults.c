@@ -266,7 +266,7 @@ struct nvram_pair router_defaults[] = {
 	/* 2G Wireless parameters */
 	{ "rt_country_code", DEF_WLAN_2G_CC },
 	{ "rt_ssid", DEF_WLAN_2G_SSID },
-	{ "rt_gmode", "5" },			/* g/n mixed */
+	{ "rt_gmode", "2" },			/* b/g/n mixed */
 	{ "rt_mcs_mode", "0" },
 	{ "rt_channel", "0" },
 	{ "rt_bcn", "100" },
