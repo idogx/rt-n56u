@@ -387,9 +387,9 @@ function validate_wlphrase(s, v, obj){
                                             <th><a class="help_tooltip" href="javascript:void(0);" onmouseover="openTooltip(this, 0, 4);"><#WLANConfig11b_x_Mode11g_itemname#></a></th>
                                             <td>
                                                 <select name="rt_gmode" class="input" onChange="return change_common_rt(this, 'WLANConfig11b', 'rt_gmode')">
-                                                    <option value="2" <% nvram_match_x("","rt_gmode", "2","selected"); %>>b/g/n Mixed</option>
+                                                    <option value="2" <% nvram_match_x("","rt_gmode", "2","selected"); %>>b/g/n Mixed (*)</option>
                                                     <option value="1" <% nvram_match_x("","rt_gmode", "1","selected"); %>>b/g Mixed</option>
-                                                    <option value="5" <% nvram_match_x("","rt_gmode", "5","selected"); %>>g/n Mixed (*)</option>
+                                                    <option value="5" <% nvram_match_x("","rt_gmode", "5","selected"); %>>g/n Mixed</option>
                                                     <option value="3" <% nvram_match_x("","rt_gmode", "3","selected"); %>>n Only</option>
                                                     <option value="4" <% nvram_match_x("","rt_gmode", "4","selected"); %>>g Only</option>
                                                     <option value="0" <% nvram_match_x("","rt_gmode", "0","selected"); %>>b Only</option>
