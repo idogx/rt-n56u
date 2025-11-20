@@ -3773,8 +3773,8 @@ BOOLEAN RTMPCheckStrPrintAble(
 	UCHAR i = 0;
 
 	for (i = 0; i < strLen; i++) {
-		if ((pInPutStr[i] < 0x20) || (pInPutStr[i] > 0x7E))
-			return TRUE;
+		if ((pInPutStr[i] < 0x20) || (pInPutStr[i] == 0x7F))
+			return false;
 	}
 
 	return TRUE;
