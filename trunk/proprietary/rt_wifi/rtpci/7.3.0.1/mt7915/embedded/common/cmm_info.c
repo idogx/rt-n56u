@@ -3777,7 +3777,7 @@ BOOLEAN RTMPCheckStrPrintAble(
              strLen, (unsigned char)pInPutStr[0]);
     
     for (i = 0; i < strLen; i++) {
-        if ((pInPutStr[i] < 0x20) || (pInPutStr[i] == 0x7F)) {
+        if (((unsigned char)pInPutStr[i] < 0x20) || ((unsigned char)pInPutStr[i] == 0x7F)) {
             printk("REJECT: pos=%d, char=0x%02X\n", i, (unsigned char)pInPutStr[i]);
             return FALSE;
         }
