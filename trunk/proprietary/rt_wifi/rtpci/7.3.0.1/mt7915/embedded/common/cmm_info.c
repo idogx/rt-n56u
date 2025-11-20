@@ -3771,19 +3771,11 @@ BOOLEAN RTMPCheckStrPrintAble(
     IN  UCHAR strLen)
 {
     UCHAR i = 0;
-
-    // 只记录第一个字符和长度
-    printk("SSID Check: len=%d, first_char=0x%02X\n", 
-             strLen, (unsigned char)pInPutStr[0]);
-    
     for (i = 0; i < strLen; i++) {
         if (((unsigned char)pInPutStr[i] < 0x20) || ((unsigned char)pInPutStr[i] == 0x7F)) {
-            printk("REJECT: pos=%d, char=0x%02X\n", i, (unsigned char)pInPutStr[i]);
             return FALSE;
         }
     }
-    
-    printk("ACCEPTED\n");
     return TRUE;
 }
 
